@@ -1,4 +1,31 @@
 <resources>
     <string name="app_name">demo_app</string>
-    <string name="home_description">Hello everyone~ This is Johnson Wu's demo app </string>
+    <string name="home_description">Hello everyone, This is Johnson Wu\'s demo app </string>
+
+    <!--function title-->
+    <string name="function_1">Order App</string>
+    <string name="function_2">Inventory Control App</string>
+    <string name="function_3">Quake Report</string>
+    <string name="function_4">Tour Guide</string>
+
+
+
+    <!--function introduction-->
+    <string name="function_1_introduction">
+        This is a very simple order coffee app , let people can easier to order they want coffee!
+    </string>
+
+    <string name="function_2_introduction">
+        This app help people can easier to check and change there inventory quantity.
+    </string>
+
+    <string name="function_3_introduction">
+        It\'s a practice to use API in app , It\'s a simple quake app!
+    </string>
+
+    <string name="function_4_introduction">
+        This tour guide app briefly introduce my hometown Kaohsiung,I choose a few popular attractions to share for other people.
+    </string>
+
 </resources>
+
