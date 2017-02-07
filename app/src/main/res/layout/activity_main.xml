@@ -16,11 +16,6 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@android:color/black" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -31,6 +26,7 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/fb_1"
                 style="@style/Function_Button"
                 android:text="@string/function_1" />
 
@@ -43,6 +39,7 @@
             <View style="@style/Divider" />
 
             <Button
+                android:id="@+id/fb_2"
                 style="@style/Function_Button"
                 android:text="@string/function_2" />
 
@@ -53,6 +50,7 @@
                 android:text="@string/function_2_introduction" />
 
             <Button
+                android:id="@+id/fb_3"
                 style="@style/Function_Button"
                 android:text="@string/function_3" />
 
@@ -63,6 +61,7 @@
                 android:text="@string/function_3_introduction" />
 
             <Button
+                android:id="@+id/fb_4"
                 style="@style/Function_Button"
                 android:text="@string/function_4" />
 
@@ -76,6 +75,11 @@
 
 
     </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
 
 
 </LinearLayout>
