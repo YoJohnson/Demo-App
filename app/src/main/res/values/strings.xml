@@ -32,8 +32,12 @@
     <string name="f1_type_name">Name</string>
     <string name="f1_phone_number">Phone Number</string>
 
+    <!--function 1 layout description-->
     <string name="order_list">Order List</string>
     <string name="order_price">Price : </string>
+
+    <!--function 1 menu string-->
+    <string name="action_ok">Ok</string>
 
 
 

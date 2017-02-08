@@ -2,6 +2,7 @@ package com.example.mobilogics.demo_app.order;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -53,4 +54,15 @@ public class OrderActivity extends AppCompatActivity{
 
         mQuantity.setAdapter(quantitySpinnerAdapter);
     }
+
+    /**
+     * Setup the menu
+     */
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.order_menu,menu);
+        return true;
+    }
+
 }
