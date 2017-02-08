@@ -26,5 +26,17 @@
         This tour guide app briefly introduce my hometown Kaohsiung,I choose a few popular attractions to share for other people.
     </string>
 
+
+    <!--function 1 string-->
+    <!--name & phone hint-->
+    <string name="f1_type_name">Name</string>
+    <string name="f1_phone_number">Phone Number</string>
+
+    <string name="order_list">Order List</string>
+    <string name="order_price">Price : </string>
+
+
+
+
 </resources>
 
