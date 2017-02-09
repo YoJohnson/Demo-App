@@ -39,7 +39,8 @@
     <!--function 1 menu string-->
     <string name="action_ok">Ok</string>
 
-
+    <!--toast the user to choose coffee-->
+    <string name="choose_coffee">Please Choose a Coffee</string>
 
 
 </resources>
