@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="bottom"
-                android:text="need sugar?"
+                android:text="@string/f1_need_sugar"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -81,7 +81,8 @@
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/checkBox" />
 
             </LinearLayout>
 
@@ -93,10 +94,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/order_price"
+                    android:text="@string/f1_order_price"
                     android:textSize="20sp" />
 
+
+                <!--show the price-->
                 <TextView
+                    android:id="@+id/price_show"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -105,10 +109,11 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/add_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="add" />
+                android:text="@string/f1_add_button" />
 
         </LinearLayout>
 
@@ -117,9 +122,11 @@
     <View style="@style/Divider" />
 
     <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/order_list" />
+        android:text="@string/f1_order_list" />
 
     <TextView
         android:id="@+id/order_list"

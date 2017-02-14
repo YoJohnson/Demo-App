@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qishan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:padding="14dp"
+        android:id="@+id/information"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:textColor="#263238"
+        android:gravity="center_vertical"
+        android:background="#D7CCC8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="test"/>
+
+    <ListView
+        android:id="@+id/introduction_one"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

@@ -33,14 +33,82 @@
     <string name="f1_phone_number">Phone Number</string>
 
     <!--function 1 layout description-->
-    <string name="order_list">Order List</string>
-    <string name="order_price">Price : </string>
+    <string name="f1_order_list">Order List : </string>
+    <string name="f1_order_price">Price : </string>
+    <string name="f1_add_button">add</string>
+    <string name="f1_need_sugar">need sugar?</string>
 
     <!--function 1 menu string-->
-    <string name="action_ok">Ok</string>
+    <string name="f1_action_ok">Ok</string>
 
     <!--toast the user to choose coffee-->
-    <string name="choose_coffee">Please Choose a Coffee</string>
+    <string name="f1_choose_coffee">Please Choose a Coffee</string>
+
+
+    <!--function 4 string-->
+    <!--title-->
+    <string name="f4_openingRemark">Hello! Welcome to KAOHSIUNG City!</string>
+    <string name="f4_title1">Banana Kingdom</string>
+    <string name="f4_tabTitle1">Banana</string>
+    <string name="f4_title2">Lianchihtan</string>
+    <string name="f4_tabTitle2">Lianchihtan</string>
+    <string name="f4_title3">Rueifong Night Market</string>
+    <string name="f4_tabTitle3">Rueifong</string>
+    <string name="f4_title4">THE PIER-2 ART CENTER</string>
+    <string name="f4_tabTitle4">PIER-2</string>
+
+    <!--the article subject-->
+    <string name="f4_bananaKingdom"> About a 30 minute drive east from Kaohsiung City lies the bustling little township of Qishan (also spelled Cishan). Qishan along with Meinong which is just across the river offer up good local food and picturesque mountainous views. It has a population of about 39,000.</string>
+    <string name="f4_Lianchihtan">Lotus Pond, named after the aquatic plants growing in it, is located in eastern Zuoying District. The pond is surrounded by willow trees, area of 75 hectares, also an area of temples like Confucius Temple, Spring Autumn Pavilion and Dragon and Tiger Tower.</string>
+    <string name="f4_RueifongNightMarket">Located on Nanping Road in Zuoying District of Kaohsiung City.Just like every other Taiwan night markets, Rueifong Night Market does not only offer a wide selection of local snacks, but also packed with youth oriented and multi-dimensional delicacies due to the population of youngsters attracted by the nearby Kaohsiung Arena(Is a Department store).</string>
+    <string name="f4_ThePier2ArtCenter">The Pier-2 Art Center is housed in a formerly disused dockside warehouse that was transformed into a creativity center for design and contemporary art in southern Taiwan.</string>
+
+    <!--the introduction content-->
+    <!--the title1(Qishan)-->
+    <string name="f4_title1_1">Qishan Stinky Tofu</string>
+    <string name="f4_title1_1_1">is a form of fermented tofu that has a strong odor.</string>
+    <string name="f4_title1_2">Banana Beer</string>
+    <string name="f4_title1_2_1">There is banana juice in the beer.</string>
+    <string name="f4_title1_3">Banana Cake</string>
+    <string name="f4_title1_3_1">Add the banana inside the cake.</string>
+    <string name="f4_title1_4">Banana Egg Rolls</string>
+    <string name="f4_title1_4_1">The egg rolls are made from bananas, eggs and flour.</string>
+    <string name="f4_title1_5">Banana Beverage</string>
+    <string name="f4_title1_5_1">This beverage are made from many many banana and yeast.</string>
+    <string name="f4_title1_6">Banana Ice Cream Bar</string>
+    <string name="f4_title1_6_1">outer layer is chocolate, and inside is banana &amp; milk ice cream.</string>
+
+    <!--the title2(Lianchihtan)-->
+    <string name="f4_title2_1">Dragon &amp; Tiger Tower</string>
+    <string name="f4_title2_1_1">It is the most famous attraction of Lianchihtan.</string>
+    <string name="f4_title2_2">Buddha Statues</string>
+    <string name="f4_title2_2_1">Southeast Asia is known as the highest water gods.</string>
+    <string name="f4_title2_3">Water Skiing</string>
+    <string name="f4_title2_3_1">Is a relatively safe water activities.</string>
+    <string name="f4_title2_4">Confucius Temple</string>
+    <string name="f4_title2_4_1">This temple is to worship Confucius.</string>
+
+    <!--the title3(RueifongNightMarket)-->
+    <string name="f4_title3_1">Pork Knuckle</string>
+    <string name="f4_title3_1_1">Grilled pork feet with charcoal.</string>
+    <string name="f4_title3_2">Roasted Duck Burrito</string>
+    <string name="f4_title3_2_1">Use pancakes to wrap duck and onions.</string>
+    <string name="f4_title3_3">Mochi</string>
+    <string name="f4_title3_3_1">Use of glutinous rice and milk with a variety of ingredients made.</string>
+    <string name="f4_title3_4">Chicken Skewers</string>
+    <string name="f4_title3_4_1">Grilled chicken with a special sauce.</string>
+
+    <!--the title4(The Pier 2 Art Center)-->
+    <string name="f4_title4_1">Yellow Robot</string>
+    <string name="f4_title4_1_1">MayDay(Taiwan Music Band) presented to us this robot.</string>
+    <string name="f4_title4_2">Upside down the house</string>
+    <string name="f4_title4_2_1">Show a house where everything is upside down.</string>
+    <string name="f4_title4_3">Display warehouse</string>
+    <string name="f4_title4_3_1">Appearance is warehouse, but there is the exhibition.</string>
+    <string name="f4_title4_4">Love\'s Men</string>
+    <string name="f4_title4_4_1">The pattern behind this model can be pieced together into love!</string>
+    <string name="f4_title4_5">Two people sitting</string>
+    <string name="f4_title4_5_1">Two people sitting on the warehouse door.</string>
 
 
 </resources>

@@ -18,10 +18,11 @@
         <activity android:name=".order.OrderActivity" />
         <activity android:name=".inventory.InventoryActivity" />
         <activity android:name=".quake.QuakeActivity" />
-        <activity android:name=".tour.TourActivity"></activity>
+        <activity android:name=".tour.TourActivity">
+        </activity>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more Information.
         -->
         <meta-data
             android:name="com.google.android.gms.version"
