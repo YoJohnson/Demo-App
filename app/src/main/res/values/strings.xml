@@ -127,6 +127,30 @@
     <!-- Toast message in editor when current product has failed to be deleted-->
     <string name="f2_editor_delete_failed">Error with deleting product</string>
 
+    <!--function 3 string-->
+    <string name="f3_near_the">Near the</string>
+
+    <string name="f3_no_earthquakes">No earthquakes found.</string>
+    <string name="f3_no_internet">No internet connection.</string>
+
+    <string name="f3_settings_menu_item">Settings</string>
+
+    <string name="f3_settings_title">Earthquake Settings</string>
+
+    <string name="f3_settings_min_magnitude_label">Minimum Magnitude</string>
+    <string name="f3_settings_min_magnitude_key" translatable="false">min_magnitude</string>
+    <string name="f3_settings_min_magnitude_default" translatable="false">6</string>
+
+    <string name="f3_settings_order_by_label">Order By</string>
+    <string name="f3_settings_order_by_key" translatable="false">order_by</string>
+    <string name="f3_settings_order_by_default" translatable="false">@string/f3_settings_order_by_magnitude_value</string>
+
+    <string name="f3_settings_order_by_magnitude_label">Magnitude</string>
+    <string name="f3_settings_order_by_magnitude_value" translatable="false">magnitude</string>
+
+    <string name="f3_settings_order_by_most_recent_label">Most Recent</string>
+    <string name="f3_settings_order_by_most_recent_value" translatable="false">time</string>
+
     <!--function 4 string-->
     <!--title-->
     <string name="f4_openingRemark">Hello! Welcome to KAOHSIUNG City!</string>
