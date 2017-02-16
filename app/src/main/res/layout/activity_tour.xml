@@ -9,7 +9,7 @@
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
-        style="@style/CategoryTab"
+        style="@style/F4_CategoryTab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

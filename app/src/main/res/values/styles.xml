@@ -32,9 +32,40 @@
         <item name="android:background">@android:color/black</item>
     </style>
 
+    <!--Function 2 style-->
+    <!-- Style for a category in the editor -->
+    <style name="f2_CategoryStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <!-- Style for an EditText field in the editor -->
+    <style name="EditorFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="UnitStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <style name="EditorTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/editorColorPrimary</item>
+        <item name="colorPrimaryDark">@color/editorColorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 
     <!--Function 4 style-->
-    <style name="CategoryStyle">
+    <style name="F4_CategoryStyle">
         <item name="android:gravity">center_vertical</item>
         <item name="android:padding">16dp</item>
         <item name="android:textColor">@android:color/white</item>
@@ -43,15 +74,15 @@
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 
-    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+    <style name="F4_CategoryTab" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/black</item>
         <item name="tabSelectedTextColor">@android:color/black</item>
-        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+        <item name="tabTextAppearance">@style/F4_CategoryTabTextAppearance</item>
 
     </style>
 
     <!-- Style for a category of vocabulary words -->
-    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+    <style name="F4_CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">#A8A19E</item>
     </style>
 

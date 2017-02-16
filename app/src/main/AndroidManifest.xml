@@ -16,10 +16,34 @@
             </intent-filter>
         </activity>
         <activity android:name=".order.OrderActivity" />
+
         <activity android:name=".inventory.InventoryActivity" />
+        <activity
+            android:name=".inventory.EditorActivity"
+            android:parentActivityName=".inventory.InventoryActivity"
+            android:theme="@style/EditorTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventory.InventoryActivity"/>
+        </activity>
+        <activity
+            android:name=".inventory.InformationActivity"
+            android:parentActivityName=".inventory.InventoryActivity"
+            android:theme="@style/EditorTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventory.InventoryActivity"/>
+        </activity>
+
         <activity android:name=".quake.QuakeActivity" />
+
         <activity android:name=".tour.TourActivity">
         </activity>
+
+        <provider
+            android:authorities="com.example.mobilogics.demo_app"
+            android:name=".inventory.data.ProductProvider"
+            android:exported="false"/>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more Information.
