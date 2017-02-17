@@ -19,6 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".order.OrderActivity" />
+        <activity
+            android:name=".order.CheckOrderActivity"
+            android:parentActivityName=".order.OrderActivity">
+
+        </activity>
 
         <activity android:name=".inventory.InventoryActivity" />
         <activity

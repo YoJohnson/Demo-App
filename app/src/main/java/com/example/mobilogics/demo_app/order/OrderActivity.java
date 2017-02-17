@@ -1,12 +1,18 @@
 package com.example.mobilogics.demo_app.order;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
@@ -29,11 +35,28 @@ public class OrderActivity extends AppCompatActivity {
 
     private TextView mPriceShow;
 
+    private TextView mOrderShow;
+
+    private CheckBox needSugar;
+
+    private int mCoffeeCategory;
+
     private int mCoffeeChoosePrice;
 
-    private int iQuantity;
+    private int iQuantity = 0;
 
     private int mCoffeePrice;
+
+    private int totalPrice = 0;
+
+    private boolean hasSugar;
+
+    private EditText nameEditText;
+
+    private EditText phoneEditText;
+
+    private String order = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,21 +64,91 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order);
         setTitle(getString(R.string.function_1));
 
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
         mCoffeeSpinner = (Spinner) findViewById(R.id.coffee_type_spinner);
         mQuantity = (Spinner) findViewById(R.id.coffee_quantity);
         mCoffeeImage = (ImageView) findViewById(R.id.coffee_image);
         mPriceShow = (TextView) findViewById(R.id.price_show);
+        nameEditText = (EditText) findViewById(R.id.f1_type_name);
+        phoneEditText = (EditText) findViewById(R.id.f1_phone_number);
+        needSugar = (CheckBox) findViewById(R.id.sugarCheckBox);
+        mOrderShow = (TextView) findViewById(R.id.order_list);
+
 
         setCoffeeSpinner();
         setQuantitySpinner();
 
-        Button add = (Button)findViewById(R.id.add_button);
+        Button add = (Button) findViewById(R.id.add_button);
         add.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
+                hasSugar = needSugar.isChecked();
+
+                if (mCoffeeCategory == 0) {
+                    Toast.makeText(OrderActivity.this, getString(R.string.f1_choose_coffee), Toast.LENGTH_SHORT).show();
+                } else if (iQuantity == 0) {
+                    Toast.makeText(OrderActivity.this, getString(R.string.f1_choose_quantity), Toast.LENGTH_SHORT).show();
+                } else {
+                    switch (mCoffeeCategory) {
+                        case 1:
+                            if (hasSugar) {
+                                order = order + "\n" + getString(R.string.f1_coffee_1_y) + "     " + Integer.toString(iQuantity) + "     " + Integer.toString(mCoffeePrice);
+                            } else {
+                                order = order + "\n" + getString(R.string.f1_coffee_1_n) + "     " + Integer.toString(iQuantity) + "     " + Integer.toString(mCoffeePrice);
+                            }
+
+                            showOrder();
+                            totalPrice += mCoffeePrice;
+                            break;
+                        case 2:
+                            if (hasSugar) {
+                                order = order + "\n" + getString(R.string.f1_coffee_2_y) + "     " + Integer.toString(iQuantity) + "     " + Integer.toString(mCoffeePrice);
+                            } else {
+                                order = order + "\n" + getString(R.string.f1_coffee_2_n) + "     " + Integer.toString(iQuantity) + "     " + Integer.toString(mCoffeePrice);
+                            }
+
+                            showOrder();
+                            totalPrice += mCoffeePrice;
+                            break;
+                        case 3:
+                            if (hasSugar) {
+                                order = order + "\n" + getString(R.string.f1_coffee_3_y) + "     " + Integer.toString(iQuantity) + "     " + Integer.toString(mCoffeePrice);
+                            } else {
+                                order = order + "\n" + getString(R.string.f1_coffee_3_n) + "     " + Integer.toString(iQuantity) + "     " + Integer.toString(mCoffeePrice);
+                            }
+
+                            showOrder();
+                            totalPrice += mCoffeePrice;
+                            break;
+                    }
+                }
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        String name = nameEditText.getText().toString().trim();
+        String phone = phoneEditText.getText().toString().trim();
+
+        if (TextUtils.isEmpty(name) || TextUtils.isEmpty(phone)) {
+            Toast.makeText(this, getString(R.string.f1_warning), Toast.LENGTH_SHORT).show();
+        } else {
+
+            Intent intent = new Intent(OrderActivity.this, CheckOrderActivity.class);
+            intent.putExtra("name", name);
+            intent.putExtra("phone", phone);
+            intent.putExtra("order", order);
+            intent.putExtra("price" , totalPrice);
+            startActivity(intent);
+
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -81,7 +174,9 @@ public class OrderActivity extends AppCompatActivity {
 
                     case 0:
                         mCoffeeChoosePrice = 0;
+                        mCoffeeCategory = 0;
                         priceShow();
+
                         Toast.makeText(OrderActivity.this, getString(R.string.f1_choose_coffee), Toast.LENGTH_SHORT).show();
 
                         return;
@@ -89,6 +184,7 @@ public class OrderActivity extends AppCompatActivity {
                     case 1:
                         mCoffeeImage.setImageResource(R.drawable.espresso);
                         mCoffeeChoosePrice = 10;
+                        mCoffeeCategory = 1;
 
                         priceShow();
 
@@ -97,6 +193,7 @@ public class OrderActivity extends AppCompatActivity {
                     case 2:
                         mCoffeeImage.setImageResource(R.drawable.cappuccino);
                         mCoffeeChoosePrice = 15;
+                        mCoffeeCategory = 2;
 
                         priceShow();
 
@@ -105,6 +202,7 @@ public class OrderActivity extends AppCompatActivity {
                     case 3:
                         mCoffeeImage.setImageResource(R.drawable.mocha);
                         mCoffeeChoosePrice = 20;
+                        mCoffeeCategory = 3;
 
                         priceShow();
 
@@ -117,10 +215,6 @@ public class OrderActivity extends AppCompatActivity {
                 Toast.makeText(OrderActivity.this, getString(R.string.f1_choose_coffee), Toast.LENGTH_SHORT).show();
             }
         });
-        {
-
-        }
-        ;
 
 
     }
@@ -159,7 +253,7 @@ public class OrderActivity extends AppCompatActivity {
     /**
      * this is do the price show method.
      */
-    private void priceShow(){
+    private void priceShow() {
         mCoffeePrice = iQuantity * mCoffeeChoosePrice;
 
         String price = Integer.toString(mCoffeePrice);
@@ -175,6 +269,10 @@ public class OrderActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.order_menu, menu);
         return true;
+    }
+
+    private void showOrder() {
+        mOrderShow.setText(order);
     }
 
 }

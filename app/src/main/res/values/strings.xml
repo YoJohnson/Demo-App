@@ -37,12 +37,41 @@
     <string name="f1_order_price">Price : </string>
     <string name="f1_add_button">add</string>
     <string name="f1_need_sugar">need sugar?</string>
+    <string name="f1_order_list_title">Order List</string>
+    <string name="f1_dollars">dollars</string>
 
     <!--function 1 menu string-->
     <string name="f1_action_ok">Ok</string>
 
+    <!--function 1 warning about name or phone-->
+    <string name="f1_warning">Please check your buyer information!</string>
+
     <!--toast the user to choose coffee-->
     <string name="f1_choose_coffee">Please Choose a Coffee</string>
+
+    <!--toast the user to choose a quantity-->
+    <string name="f1_choose_quantity">Please Choose a Quantity</string>
+
+    <!--buyer information-->
+    <string name="f1_order_name">Name :</string>
+    <string name="f1_order_phone">Phone :</string>
+    
+    <!--submit order-->
+    <string name="f1_submit_order">Submit Order</string>
+
+    <!--thanks buyer-->
+    <string name="f1_thank_buyer_1">Very thanks your order,</string>
+    <string name="f1_thank_buyer_2">Please check your order list.</string>
+
+
+    <!--about the coffee catagory-->
+    <string name="f1_coffee_1_y">Espresso  need sugar</string>
+    <string name="f1_coffee_1_n">Espresso  no sugar</string>
+    <string name="f1_coffee_2_y">Cappuccino  need sugar</string>
+    <string name="f1_coffee_2_n">Cappuccino  no sugar</string>
+    <string name="f1_coffee_3_y">Mocha  need sugar</string>
+    <string name="f1_coffee_3_n">Mocha  no sugar</string>
+
 
 
     <!--function 2 string-->
